@@ -4,3 +4,6 @@
 [submodule "SocketRocket"]
 	path = SocketRocket
 	url = https://syalam@github.com/square/SocketRocket.git
+[submodule "Vendor/Bully"]
+	path = Vendor/Bully
+	url = https://github.com/samsoffes/bully.git

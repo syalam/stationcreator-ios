@@ -17,6 +17,12 @@
 		8C4C6E9F15DDDD5D00560735 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4C6E9D15DDDD5D00560735 /* MainStoryboard_iPad.storyboard */; };
 		8C4C6EA215DDDD5D00560735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4C6EA115DDDD5D00560735 /* ViewController.m */; };
 		8C72C71115DDFC1200984191 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C72C71015DDFC1200984191 /* CFNetwork.framework */; };
+		8CA7D36115DE0D7900D9D022 /* libPusher-combined.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA7D36015DE0D7900D9D022 /* libPusher-combined.a */; };
+		8CA7D36315DE0DC100D9D022 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA7D36215DE0DC100D9D022 /* libicucore.dylib */; };
+		8CA7D36515DE0DC700D9D022 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA7D36415DE0DC700D9D022 /* Security.framework */; };
+		8CA7D36715DE0DD200D9D022 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA7D36615DE0DD200D9D022 /* SystemConfiguration.framework */; };
+		8CA7D37D15DE128F00D9D022 /* NSMutableURLRequest+BasicAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA7D37C15DE128F00D9D022 /* NSMutableURLRequest+BasicAuth.m */; };
+		8CA7D38015DE12A400D9D022 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA7D37F15DE12A400D9D022 /* NSData+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,31 @@
 		8C4C6EA015DDDD5D00560735 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8C4C6EA115DDDD5D00560735 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8C72C71015DDFC1200984191 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8CA7D34F15DE0D7900D9D022 /* PTEventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTEventListener.h; sourceTree = "<group>"; };
+		8CA7D35015DE0D7900D9D022 /* PTJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTJSON.h; sourceTree = "<group>"; };
+		8CA7D35115DE0D7900D9D022 /* PTJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTJSONParser.h; sourceTree = "<group>"; };
+		8CA7D35215DE0D7900D9D022 /* PTPusher+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTPusher+Testing.h"; sourceTree = "<group>"; };
+		8CA7D35315DE0D7900D9D022 /* PTPusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusher.h; sourceTree = "<group>"; };
+		8CA7D35415DE0D7900D9D022 /* PTPusherAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherAPI.h; sourceTree = "<group>"; };
+		8CA7D35515DE0D7900D9D022 /* PTPusherChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherChannel.h; sourceTree = "<group>"; };
+		8CA7D35615DE0D7900D9D022 /* PTPusherConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherConnection.h; sourceTree = "<group>"; };
+		8CA7D35715DE0D7900D9D022 /* PTPusherDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherDelegate.h; sourceTree = "<group>"; };
+		8CA7D35815DE0D7900D9D022 /* PTPusherErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherErrors.h; sourceTree = "<group>"; };
+		8CA7D35915DE0D7900D9D022 /* PTPusherEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherEvent.h; sourceTree = "<group>"; };
+		8CA7D35A15DE0D7900D9D022 /* PTPusherEventDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherEventDispatcher.h; sourceTree = "<group>"; };
+		8CA7D35B15DE0D7900D9D022 /* PTPusherEventPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherEventPublisher.h; sourceTree = "<group>"; };
+		8CA7D35C15DE0D7900D9D022 /* PTPusherMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherMacros.h; sourceTree = "<group>"; };
+		8CA7D35D15DE0D7900D9D022 /* PTPusherMockConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherMockConnection.h; sourceTree = "<group>"; };
+		8CA7D35E15DE0D7900D9D022 /* PTPusherPresenceChannelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPusherPresenceChannelDelegate.h; sourceTree = "<group>"; };
+		8CA7D35F15DE0D7900D9D022 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		8CA7D36015DE0D7900D9D022 /* libPusher-combined.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPusher-combined.a"; sourceTree = "<group>"; };
+		8CA7D36215DE0DC100D9D022 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		8CA7D36415DE0DC700D9D022 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8CA7D36615DE0DD200D9D022 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8CA7D37B15DE128F00D9D022 /* NSMutableURLRequest+BasicAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+BasicAuth.h"; sourceTree = "<group>"; };
+		8CA7D37C15DE128F00D9D022 /* NSMutableURLRequest+BasicAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+BasicAuth.m"; sourceTree = "<group>"; };
+		8CA7D37E15DE12A400D9D022 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		8CA7D37F15DE12A400D9D022 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,10 +73,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CA7D36715DE0DD200D9D022 /* SystemConfiguration.framework in Frameworks */,
+				8CA7D36515DE0DC700D9D022 /* Security.framework in Frameworks */,
+				8CA7D36315DE0DC100D9D022 /* libicucore.dylib in Frameworks */,
 				8C72C71115DDFC1200984191 /* CFNetwork.framework in Frameworks */,
 				8C4C6E8915DDDD5D00560735 /* UIKit.framework in Frameworks */,
 				8C4C6E8B15DDDD5D00560735 /* Foundation.framework in Frameworks */,
 				8C4C6E8D15DDDD5D00560735 /* CoreGraphics.framework in Frameworks */,
+				8CA7D36115DE0D7900D9D022 /* libPusher-combined.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +107,9 @@
 		8C4C6E8715DDDD5D00560735 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CA7D36615DE0DD200D9D022 /* SystemConfiguration.framework */,
+				8CA7D36415DE0DC700D9D022 /* Security.framework */,
+				8CA7D36215DE0DC100D9D022 /* libicucore.dylib */,
 				8C72C71015DDFC1200984191 /* CFNetwork.framework */,
 				8C4C6E8815DDDD5D00560735 /* UIKit.framework */,
 				8C4C6E8A15DDDD5D00560735 /* Foundation.framework */,
@@ -83,6 +121,7 @@
 		8C4C6E8E15DDDD5D00560735 /* StationCreator */ = {
 			isa = PBXGroup;
 			children = (
+				8CA7D36915DE0E0400D9D022 /* Helpers */,
 				8C4C6E9715DDDD5D00560735 /* AppDelegate.h */,
 				8C4C6E9815DDDD5D00560735 /* AppDelegate.m */,
 				8C4C6E9A15DDDD5D00560735 /* MainStoryboard_iPhone.storyboard */,
@@ -103,6 +142,52 @@
 				8C4C6E9615DDDD5D00560735 /* StationCreator-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CA7D34E15DE0D7900D9D022 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				8CA7D37E15DE12A400D9D022 /* NSData+Base64.h */,
+				8CA7D37F15DE12A400D9D022 /* NSData+Base64.m */,
+				8CA7D37B15DE128F00D9D022 /* NSMutableURLRequest+BasicAuth.h */,
+				8CA7D37C15DE128F00D9D022 /* NSMutableURLRequest+BasicAuth.m */,
+				8CA7D34F15DE0D7900D9D022 /* PTEventListener.h */,
+				8CA7D35015DE0D7900D9D022 /* PTJSON.h */,
+				8CA7D35115DE0D7900D9D022 /* PTJSONParser.h */,
+				8CA7D35215DE0D7900D9D022 /* PTPusher+Testing.h */,
+				8CA7D35315DE0D7900D9D022 /* PTPusher.h */,
+				8CA7D35415DE0D7900D9D022 /* PTPusherAPI.h */,
+				8CA7D35515DE0D7900D9D022 /* PTPusherChannel.h */,
+				8CA7D35615DE0D7900D9D022 /* PTPusherConnection.h */,
+				8CA7D35715DE0D7900D9D022 /* PTPusherDelegate.h */,
+				8CA7D35815DE0D7900D9D022 /* PTPusherErrors.h */,
+				8CA7D35915DE0D7900D9D022 /* PTPusherEvent.h */,
+				8CA7D35A15DE0D7900D9D022 /* PTPusherEventDispatcher.h */,
+				8CA7D35B15DE0D7900D9D022 /* PTPusherEventPublisher.h */,
+				8CA7D35C15DE0D7900D9D022 /* PTPusherMacros.h */,
+				8CA7D35D15DE0D7900D9D022 /* PTPusherMockConnection.h */,
+				8CA7D35E15DE0D7900D9D022 /* PTPusherPresenceChannelDelegate.h */,
+				8CA7D35F15DE0D7900D9D022 /* SRWebSocket.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		8CA7D36815DE0DF400D9D022 /* libPusher */ = {
+			isa = PBXGroup;
+			children = (
+				8CA7D34E15DE0D7900D9D022 /* headers */,
+				8CA7D36015DE0D7900D9D022 /* libPusher-combined.a */,
+			);
+			name = libPusher;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8CA7D36915DE0E0400D9D022 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8CA7D36815DE0DF400D9D022 /* libPusher */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +257,8 @@
 				8C4C6E9515DDDD5D00560735 /* main.m in Sources */,
 				8C4C6E9915DDDD5D00560735 /* AppDelegate.m in Sources */,
 				8C4C6EA215DDDD5D00560735 /* ViewController.m in Sources */,
+				8CA7D37D15DE128F00D9D022 /* NSMutableURLRequest+BasicAuth.m in Sources */,
+				8CA7D38015DE12A400D9D022 /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +315,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -250,6 +341,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -262,12 +357,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StationCreator/StationCreator-Prefix.pch";
-				HEADER_SEARCH_PATHS = Vendor/Bully;
 				INFOPLIST_FILE = "StationCreator/StationCreator-Info.plist";
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -280,12 +375,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StationCreator/StationCreator-Prefix.pch";
-				HEADER_SEARCH_PATHS = Vendor/Bully;
 				INFOPLIST_FILE = "StationCreator/StationCreator-Info.plist";
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

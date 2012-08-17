@@ -34,7 +34,7 @@
     
     
     [self embedYouTube:@"http://www.youtube.com/watch?v=Dl56Dd0g1Yg&feature=g-all-u" frame:[[UIScreen mainScreen] applicationFrame]];
-    NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval:161 target:self selector:@selector(loopVideo:) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:161 target:self selector:@selector(loopVideo:) userInfo:nil repeats:YES];
     //[self playVideo:@"http://www.youtube.com/watch?v=O__suqFB6XU&feature=g-user-u" frame:[[UIScreen mainScreen] applicationFrame]];
     
     

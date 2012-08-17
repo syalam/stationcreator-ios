@@ -7,9 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PTPusherDelegate.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class PTPusher;
+@class PTPusherConnectionMonitor;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, PTPusherDelegate>
+{
+    NSMutableArray *connectedClients;
+    NSMutableArray *clientsAwaitingConnection;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) PTPusher *pusher;
+@property (nonatomic, strong) PTPusherConnectionMonitor *connectionMonitor;
+@property (nonatomic) PTPusherChannel *currentChannel;
+
+- (PTPusher *)lastConnectedClient;
+- (PTPusher *)createClientWithAutomaticConnection:(BOOL)connectAutomatically;
 
 @end
