@@ -1,3 +1,6 @@
 [submodule "bully"]
 	path = bully
 	url = https://syalam@github.com/samsoffes/bully.git
+[submodule "SocketRocket"]
+	path = SocketRocket
+	url = https://syalam@github.com/square/SocketRocket.git

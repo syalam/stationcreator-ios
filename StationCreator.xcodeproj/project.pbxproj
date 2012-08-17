@@ -16,7 +16,40 @@
 		8C4C6E9C15DDDD5D00560735 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4C6E9A15DDDD5D00560735 /* MainStoryboard_iPhone.storyboard */; };
 		8C4C6E9F15DDDD5D00560735 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4C6E9D15DDDD5D00560735 /* MainStoryboard_iPad.storyboard */; };
 		8C4C6EA215DDDD5D00560735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4C6EA115DDDD5D00560735 /* ViewController.m */; };
+		8C72C70F15DDFC0B00984191 /* libBully.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C72C70715DDFBDB00984191 /* libBully.a */; };
+		8C72C71115DDFC1200984191 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C72C71015DDFC1200984191 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C72C70615DDFBDB00984191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C72C6FC15DDFBDA00984191 /* Bully.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B2587E4B1579E740009D7B44;
+			remoteInfo = Bully;
+		};
+		8C72C70815DDFBDB00984191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C72C6FC15DDFBDA00984191 /* Bully.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B2FB4873158AF9B20067FB00;
+			remoteInfo = BullyMac;
+		};
+		8C72C70A15DDFBDB00984191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C72C6FC15DDFBDA00984191 /* Bully.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B2EB6BBC15DB69FC0035AD92;
+			remoteInfo = BullyMacLibrary;
+		};
+		8C72C70D15DDFBF900984191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C72C6FC15DDFBDA00984191 /* Bully.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B2587E4A1579E740009D7B44;
+			remoteInfo = Bully;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8C4C6E8415DDDD5D00560735 /* StationCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StationCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +66,8 @@
 		8C4C6E9E15DDDD5D00560735 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		8C4C6EA015DDDD5D00560735 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8C4C6EA115DDDD5D00560735 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8C72C6FC15DDFBDA00984191 /* Bully.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Bully.xcodeproj; path = bully/Bully.xcodeproj; sourceTree = "<group>"; };
+		8C72C71015DDFC1200984191 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C72C71115DDFC1200984191 /* CFNetwork.framework in Frameworks */,
+				8C72C70F15DDFC0B00984191 /* libBully.a in Frameworks */,
 				8C4C6E8915DDDD5D00560735 /* UIKit.framework in Frameworks */,
 				8C4C6E8B15DDDD5D00560735 /* Foundation.framework in Frameworks */,
 				8C4C6E8D15DDDD5D00560735 /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +89,8 @@
 		8C4C6E7915DDDD5D00560735 = {
 			isa = PBXGroup;
 			children = (
+				8C72C71015DDFC1200984191 /* CFNetwork.framework */,
+				8C72C6FC15DDFBDA00984191 /* Bully.xcodeproj */,
 				8C4C6E8E15DDDD5D00560735 /* StationCreator */,
 				8C4C6E8715DDDD5D00560735 /* Frameworks */,
 				8C4C6E8515DDDD5D00560735 /* Products */,
@@ -101,6 +140,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8C72C6FD15DDFBDA00984191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C72C70715DDFBDB00984191 /* libBully.a */,
+				8C72C70915DDFBDB00984191 /* Bully.framework */,
+				8C72C70B15DDFBDB00984191 /* libBullyMacLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +164,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8C72C70E15DDFBF900984191 /* PBXTargetDependency */,
 			);
 			name = StationCreator;
 			productName = StationCreator;
@@ -140,12 +190,42 @@
 			mainGroup = 8C4C6E7915DDDD5D00560735;
 			productRefGroup = 8C4C6E8515DDDD5D00560735 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8C72C6FD15DDFBDA00984191 /* Products */;
+					ProjectRef = 8C72C6FC15DDFBDA00984191 /* Bully.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8C4C6E8315DDDD5D00560735 /* StationCreator */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8C72C70715DDFBDB00984191 /* libBully.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBully.a;
+			remoteRef = 8C72C70615DDFBDB00984191 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8C72C70915DDFBDB00984191 /* Bully.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Bully.framework;
+			remoteRef = 8C72C70815DDFBDB00984191 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8C72C70B15DDFBDB00984191 /* libBullyMacLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBullyMacLibrary.a;
+			remoteRef = 8C72C70A15DDFBDB00984191 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8C4C6E8215DDDD5D00560735 /* Resources */ = {
@@ -172,6 +252,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C72C70E15DDFBF900984191 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bully;
+			targetProxy = 8C72C70D15DDFBF900984191 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8C4C6E9115DDDD5D00560735 /* InfoPlist.strings */ = {
@@ -258,7 +346,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StationCreator/StationCreator-Prefix.pch";
+				HEADER_SEARCH_PATHS = Vendor/Bully;
 				INFOPLIST_FILE = "StationCreator/StationCreator-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -271,7 +364,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StationCreator/StationCreator-Prefix.pch";
+				HEADER_SEARCH_PATHS = Vendor/Bully;
 				INFOPLIST_FILE = "StationCreator/StationCreator-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -297,6 +395,7 @@
 				8C4C6EA715DDDD5D00560735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
